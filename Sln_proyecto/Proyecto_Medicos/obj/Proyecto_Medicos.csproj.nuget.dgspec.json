@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rimac\\OneDrive\\Escritorio\\BACKUP PROYECTO_FINAL_V2\\Sln_proyecto\\Proyecto_Medicos\\Proyecto_Medicos.csproj": {}
+    "F:\\jc\\proyecto integrado\\BACKUP PROYECTO_FINAL_V2\\BACKUP PROYECTO_FINAL_V2\\git\\CitasMedicas\\Sln_proyecto\\Proyecto_Medicos\\Proyecto_Medicos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rimac\\OneDrive\\Escritorio\\BACKUP PROYECTO_FINAL_V2\\Sln_proyecto\\Proyecto_Medicos\\Proyecto_Medicos.csproj": {
+    "F:\\jc\\proyecto integrado\\BACKUP PROYECTO_FINAL_V2\\BACKUP PROYECTO_FINAL_V2\\git\\CitasMedicas\\Sln_proyecto\\Proyecto_Medicos\\Proyecto_Medicos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rimac\\OneDrive\\Escritorio\\BACKUP PROYECTO_FINAL_V2\\Sln_proyecto\\Proyecto_Medicos\\Proyecto_Medicos.csproj",
+        "projectUniqueName": "F:\\jc\\proyecto integrado\\BACKUP PROYECTO_FINAL_V2\\BACKUP PROYECTO_FINAL_V2\\git\\CitasMedicas\\Sln_proyecto\\Proyecto_Medicos\\Proyecto_Medicos.csproj",
         "projectName": "Proyecto_Medicos",
-        "projectPath": "C:\\Users\\rimac\\OneDrive\\Escritorio\\BACKUP PROYECTO_FINAL_V2\\Sln_proyecto\\Proyecto_Medicos\\Proyecto_Medicos.csproj",
-        "packagesPath": "C:\\Users\\rimac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rimac\\OneDrive\\Escritorio\\BACKUP PROYECTO_FINAL_V2\\Sln_proyecto\\Proyecto_Medicos\\obj\\",
+        "projectPath": "F:\\jc\\proyecto integrado\\BACKUP PROYECTO_FINAL_V2\\BACKUP PROYECTO_FINAL_V2\\git\\CitasMedicas\\Sln_proyecto\\Proyecto_Medicos\\Proyecto_Medicos.csproj",
+        "packagesPath": "C:\\Users\\Equipo\\.nuget\\packages\\",
+        "outputPath": "F:\\jc\\proyecto integrado\\BACKUP PROYECTO_FINAL_V2\\BACKUP PROYECTO_FINAL_V2\\git\\CitasMedicas\\Sln_proyecto\\Proyecto_Medicos\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\rimac\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Equipo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,8 +55,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -72,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
