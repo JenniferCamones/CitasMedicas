@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Proyecto_Medicos.Models.CitasMedicas>
+
+@{
+    ViewData["Title"] = "IndexCitas";
+}
+
+<h1>Citas Agendadas</h1>
+
+<p>
+    <a asp-action="CreateCita">Agregar</a> |
+    @Html.ActionLink("Citas por Medico","CitasPorMedico","Acceso")
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nrocita)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fecha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.codpac)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nompac)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pago)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nrocita)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.codpac)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nompac)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pago)
+            </td>
+            <td>
+                
+                @Html.ActionLink("Detalles", "DetailsCita", new { id = item.nrocita },new { @class = "btn btn-success" } ) | 
+                @Html.ActionLink("Eliminar", "DeleteCita",  new { id = item.nrocita },new { @class = "btn btn-success" } ) |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Proyecto_Medicos.Models.Medicos>
+
+@{
+    ViewData["Title"] = "Medicos";
+}
+
+<h1>Medicos</h1>
+<div class="mb-4 mt-4">
+    @using (Html.BeginForm())
+    {
+        <p class="fw-bold">Busqueda de Especialidad:</p>
+        @Html.TextBox("Especialidad", null, new {@class = "form-control mb-2 mt-2"})
+        <button class="btn btn-primary" type="submit">Consultar</button>
+        
+    }
+</div>
+
+<div class="container">
+    <div class="row gy-3 my-3">
+        @foreach (var item in Model)
+        {
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 25rem; height: 40rem;">
+                    <img src="@Url.Content("/MedicoImagenes/" + item.codMed + ".png")" width="300px" height="300px" class="card-img-top" alt="@item.nomMed">
+                    <div class="card-body">
+                        <ul>
+                            <li>Codigo del Medico: @Html.DisplayFor(modelItem => item.codMed)</li>
+                            <li>Nombre del Medico: @Html.DisplayFor(modelItem => item.nomMed)</li>
+                            <li>AÑo Colegiado: @Html.DisplayFor(modelItem => item.anioColegio)</li>
+                            <li>Nombre del Distrito: @Html.DisplayFor(modelItem => item.codDis)</li>
+                            <li>Especialidad: @Html.DisplayFor(modelItem => item.codEsp)</li>
+                            <li>Horario: @Html.DisplayFor(modelItem => item.codHora)</li>
+                            <li>Ocupado: @Html.DisplayFor(modelItem => item.ocupado)</li>                     
+                        </ul>
+                        <div style="margin: 2rem; text-align:center">
+                            <div>
+                                @if (string.Equals(item.ocupado, "NO", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    <p>
+                                        <a asp-action="CreateCita">Seleccionar</a>
+                                    </p>
+                                }
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<div class="alert alert-success mt-2">
+    @ViewBag.total
+</div>

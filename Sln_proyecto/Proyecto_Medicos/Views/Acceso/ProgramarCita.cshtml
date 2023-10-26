@@ -1,0 +1,54 @@
+﻿@model Proyecto_Medicos.Models.Citas
+
+@{
+    ViewData["Title"] = "ProgramarCita";
+}
+
+<h1>ProgramarCita</h1>
+
+<h4>Citas</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ProgramarCita">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="nomPac" class="control-label"></label>
+                <input asp-for="nomPac" class="form-control" />
+                <span asp-validation-for="nomPac" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="codMed" class="control-label"></label>
+                <input asp-for="codMed" class="form-control" />
+                <span asp-validation-for="codMed" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="codEsp" class="control-label"></label>
+                <input asp-for="codEsp" class="form-control" />
+                <span asp-validation-for="codEsp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="codTurno" class="control-label"></label>
+                <input asp-for="codTurno" class="form-control" />
+                <span asp-validation-for="codTurno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fecha" class="control-label"></label>
+                <input asp-for="fecha" class="form-control" />
+                <span asp-validation-for="fecha" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
